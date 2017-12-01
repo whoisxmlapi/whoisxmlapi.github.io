@@ -1,0 +1,71 @@
+---
+---
+
+@import "{{ site.theme }}";
+@import "bootstrap/mixins/clearfix";
+@import "bootstrap/mixins/nav-divider";
+@import "bootstrap/mixins/border-radius";
+@import "bootstrap/variables";
+@import "bootstrap/navs";
+
+.page-header {
+  background-color: #f00000 !important;
+  background-image: linear-gradient(120deg, #e2413b, #f88677) !important;
+}
+
+img.center {
+  display: block;
+  margin: 0 auto;
+}
+
+.main-content h1,
+.main-content h2,
+.main-content h3,
+.main-content h4,
+.main-content h5,
+.main-content h6 {
+  color: #f16658;
+}
+
+.wh-header {
+  padding: 0 0 0 0;
+}
+
+.wh-logo {
+  width: 25%;
+}
+
+.main-content h1 {
+  color: #0f095e;
+}
+
+.toc {
+  display: block;
+  padding-bottom: 10px;
+  width:  100%;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+.toc-item {
+  padding: 0 20px;
+  display: inline;
+  border: 1px solid #dfdfdf;
+  border-radius: 5px;
+  background: #fafafa;
+  margin: 0 5px;
+  white-space: nowrap;
+}
+
+a.button:hover .toc-item {
+  background: #eee;
+}
+
+a.button:hover {
+  text-decoration: none;
+}
+
+a.button {
+  margin-top: 5px !important;
+  display: inline-block;
+}
