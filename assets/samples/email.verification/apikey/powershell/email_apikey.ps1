@@ -1,6 +1,6 @@
-$username = "your_whois_api_username"
-$key = "your_whois_api_key"
-$secret = "your_whois_api_secret_key"
+$username = "your_email_verification_api_username"
+$key = "your_email_verification_api_key"
+$secret = "your_email_verification_api_secret_key"
 
 $emailAddress = "support@whoisxmlapi.com"
 

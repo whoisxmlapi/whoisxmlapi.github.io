@@ -1,8 +1,8 @@
 require 'open-uri'
 require 'json'
 
-username = 'your whois api username'
-password = 'your whois api password'
+username = 'your reverse whois api username'
+password = 'your reverse whois api password'
 term =  'wikimedia'
 mode = 'preview'
 format = 'json'

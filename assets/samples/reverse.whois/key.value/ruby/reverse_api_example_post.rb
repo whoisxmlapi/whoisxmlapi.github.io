@@ -14,8 +14,8 @@ request.body = "{\"terms\": [{\"section\": \"Registrant\", \"attribute\":"\
                + " \"Email\", \"value\": \"support@whoisxmlapi.com\", "\
                + "\"matchType\": \"anywhere\", \"exclude\": \"false\"}],"\
                + "\"recordsCounter\": \"false\", \"outputFormat\": \"json\","\
-               + " \"username\": \"Your whois api username\","\
-               + " \"password\": \"Your whois api password\""\
+               + " \"username\": \"Your reverse whois api username\","\
+               + " \"password\": \"Your reverse whois api password\""\
                + ", \"rows\": \"10\",  \"searchType\": \"current\"}"
 
 response = http.request(request)

@@ -4,8 +4,8 @@ using System.IO;
 
 class Program {
     public const string DOMAIN = "example.com";
-    public const string PASSWORD = "your whois api password";
-    public const string USERNAME = "your whois api username";
+    public const string PASSWORD = "your domain availability api password";
+    public const string USERNAME = "your domain availability api username";
 
     static void Main() {
         string url = "http://www.whoisxmlapi.com/whoisserver/WhoisService?"

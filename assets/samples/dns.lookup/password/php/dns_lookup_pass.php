@@ -1,8 +1,8 @@
 <?php
 
 $domain = 'example.com';
-$password = 'your whois api password';
-$username = 'your whois api username';
+$password = 'your dns lookup api password';
+$username = 'your dns lookup api username';
 
 $url ="http://www.whoisxmlapi.com/whoisserver/DNSService?domainName={$domain}"
      ."&username={$username}&password={$password}&type=A,SOA,TXT";

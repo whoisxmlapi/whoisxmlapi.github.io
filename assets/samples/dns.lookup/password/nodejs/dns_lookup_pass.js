@@ -1,8 +1,8 @@
 var http = require('http');
 
 var domain = 'example.com';
-var password = 'your whois api password';
-var username = 'your whois api username';
+var password = 'your dns lookup api password';
+var username = 'your dns lookup api username';
 
 var url = 'http://www.whoisxmlapi.com/whoisserver/DNSService?type=_all'
         + '&domainName=' + domain + '&username=' + username + '&password=' + password;

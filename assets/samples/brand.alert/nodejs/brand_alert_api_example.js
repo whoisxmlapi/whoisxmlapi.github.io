@@ -1,7 +1,7 @@
 var http = require('https');
 
-const username = 'your whois api username';
-const password = 'your whois api password';
+const username = 'your brand alert api username';
+const password = 'your brand alert api password';
 const term1 = "cinema";
 const exclude_term1 = 'movie';
 const exclude_term2 = 'online';

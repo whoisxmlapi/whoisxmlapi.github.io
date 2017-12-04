@@ -1,5 +1,5 @@
-$username = "your whois api username"
-$password = "your whois api password"
+$username = "your reverse whois api username"
+$password = "your reverse whois api password"
 
 $postParams = @{
         terms = @(

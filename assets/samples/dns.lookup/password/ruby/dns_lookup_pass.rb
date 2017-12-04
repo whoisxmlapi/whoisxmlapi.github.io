@@ -1,8 +1,8 @@
 require 'open-uri'
 require 'json'
 
-username = 'your whois api username'
-password = 'your whois api password'
+username = 'your dns lookup api username'
+password = 'your dns lookup api password'
 domain =  'twitter.com'
 type = '_all'
 format = 'json'

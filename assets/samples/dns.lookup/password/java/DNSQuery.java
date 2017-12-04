@@ -4,8 +4,8 @@ public class DNSQuery {
                 "http://www.whoisxmlapi.com/whoisserver/DNSService";
             String type = "_all";
             String domainName = "test.com";
-            String username="Your whois api username";
-            String password="Your whois api password";
+            String username="Your dns lookup api username";
+            String password="Your dns lookup api password";
             String url = API_URL + "?type=" + type 
                 + "&domainName=" + domainName + "&outputFormat=json"
                 + "&userName=" + username + "&password=" + password;

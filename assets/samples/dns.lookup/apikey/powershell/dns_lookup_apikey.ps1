@@ -1,7 +1,7 @@
 $domain = "google.com"
-$key = "your whois api key"
-$secret = "your whois api secret key"
-$username = "your whois api username"
+$key = "your dns lookup api key"
+$secret = "your dns lookup api secret key"
+$username = "your dns lookup api username"
 
 $time = [DateTimeOffset]::Now.ToUnixTimeMilliseconds()
 $req=[Text.Encoding]::UTF8.GetBytes("{`"t`":$($time),`"u`":`"$($username)`"}")

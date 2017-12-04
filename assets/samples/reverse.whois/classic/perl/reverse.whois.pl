@@ -9,8 +9,8 @@ use warnings;                   # Good practice
 my $base_url = "https://www.whoisxmlapi.com/reverse-whois-api/search.php";
 my $mode = "preview";
 my $term = "wikimedia";
-my $user_name = "your whois api username";
-my $password = "your whois api password";
+my $user_name = "your reverse whois api username";
+my $password = "your reverse whois api password";
 
 print "JSON\n---\n".getDnsData("json");
 

@@ -7,9 +7,9 @@ use Time::HiRes qw( time );
 use URI::Escape;
 
 my $email = 'support@whoisxmlapi.com';
-my $key = 'your whois api key';
-my $secret = 'your whois api secret key';
-my $username = 'your whois api username';
+my $key = 'your email verification api key';
+my $secret = 'your email verification api secret key';
+my $username = 'your email verification api username';
 
 my $time = int((time * 1000 + 0.5));
 my $reqObj = uri_escape(encode_base64("{\"t\":$time,\"u\":\"$username\"}"));

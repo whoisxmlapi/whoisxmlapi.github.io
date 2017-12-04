@@ -1,7 +1,7 @@
 <?php
 
-$user = 'your whois api username';
-$password = 'your whois api password';
+$user = 'your reverse whois api username';
+$password = 'your reverse whois api password';
 
 $header = "Content-Type: application/json\r\nAccept: application/json\r\n";
 

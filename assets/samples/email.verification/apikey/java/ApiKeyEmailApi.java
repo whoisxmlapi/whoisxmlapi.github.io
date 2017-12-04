@@ -5,9 +5,11 @@ import org.apache.commons.codec.binary.Hex;
 
 public class  ApiKeyEmailApi{
     public static final String EMAIL = "support@whoisxmlapi.com";
-    public static final String KEY = "Your whois api public key";
-    public static final String SECRET = "Your whois api secret key";
-    public static final String USERNAME = "Your whois api username";
+    public static final String KEY = "Your email verification api public key";
+    public static final String SECRET =
+        "Your email verification api secret key";
+    public static final String USERNAME =
+        "Your email verification api username";
 
     public static void main(String[] args) throws Exception {
         long time = System.currentTimeMillis();

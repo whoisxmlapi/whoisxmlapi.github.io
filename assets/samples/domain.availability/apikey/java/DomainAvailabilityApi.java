@@ -5,9 +5,11 @@ import org.apache.commons.codec.binary.Hex;
 
 public class DomainAvailabilityApi {
     public static final String DOMAIN = "example.com";
-    public static final String KEY = "your whois api key";
-    public static final String SECRET = "your whois api secret key";
-    public static final String USERNAME = "your whois api username";
+    public static final String KEY = "your domain availability api key";
+    public static final String SECRET =
+        "your domain availability api secret key";
+    public static final String USERNAME =
+        "your domain availability api username";
 
     public static void main(String[] args) throws Exception {
         long time = System.currentTimeMillis();

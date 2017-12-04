@@ -3,9 +3,9 @@ require 'openssl'
 require 'open-uri'
 
 email = 'support@whoisxmlapi.com'
-key = 'your public whois api key'
-secret = 'your secret whois api key'
-username = 'your whois api username'
+key = 'your public email verification api key'
+secret = 'your secret email verification api key'
+username = 'your email verification api username'
 
 time = (Time.now.to_f * 1000).to_i
 req = Base64.encode64('{"t":' + time.to_s + ',"u":"' + username + '"}')

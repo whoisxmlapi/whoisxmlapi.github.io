@@ -1,7 +1,7 @@
 <?php
     $emailAddress = 'support@whoisxmlapi.com';
-    $password = 'your whois api password';
-    $username = 'your whois api username';
+    $password = 'your email verification api password';
+    $username = 'your email verification api username';
 
     $url = "http://www.whoisxmlapi.com/whoisserver/EmailVerifyService"
          . "?emailAddress={$emailAddress}&validateDNS=true&validateSMTP=true"

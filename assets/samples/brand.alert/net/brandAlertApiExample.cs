@@ -5,8 +5,8 @@ public class brandAlertApiQuery
 {
     static void Main(string[] args)
     {
-        string username = "Your whois api username";
-        string password = "Your whois api password";
+        string username = "Your brand alert api username";
+        string password = "Your brand alert api password";
         string term1 = "cinema";
         string exclude_term1 = "online";
         String format = "JSON";

@@ -5,8 +5,8 @@ use warnings;
 
 use LWP::UserAgent;             # From CPAN
 
-my $user_name = "Your whois api username";
-my $password = "Your whois api password";
+my $user_name = "Your reverse whois api username";
+my $password = "Your reverse whois api password";
 my $url = 'https://www.whoisxmlapi.com/reverse-whois-api/search.php';
 my $content = '{"terms":[{"section":"Admin", "attribute":"organization",
     "value":"Wikimedia", "matchType":"anywhere", "exclude":"false"},

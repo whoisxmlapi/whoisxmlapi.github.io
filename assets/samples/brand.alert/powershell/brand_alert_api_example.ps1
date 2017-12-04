@@ -1,7 +1,7 @@
 $uri = "https://www.whoisxmlapi.com/brand-alert-api/search.php?"`
 + "term1=cinema"`
-+ "&username=Your_whois_api_username"`
-+ "&password=Your_whois_api_password"`
++ "&username=Your_brand_alert_api_username"`
++ "&password=Your_brand_alert_api_password"`
 + "&rows=10"`
 + "&page=2"
 

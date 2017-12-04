@@ -6,9 +6,9 @@ using System.Text;
 
 class Program {
     public const string email = "support@whoisxmlapi.com";
-    public const string key = "your whois api key";
-    public const string secret = "your whois api secret key";
-    public const string username = "your whois api username";
+    public const string key = "your email verification api key";
+    public const string secret = "your email verification api secret key";
+    public const string username = "your email verification api username";
 
     static void Main() {
         long time = (long)(DateTime.UtcNow.Subtract(new DateTime(1970, 1, 1))

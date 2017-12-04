@@ -21,7 +21,8 @@ var req = http.request(options, function (res) {
 req.write("{\"terms\": [{\"section\": \"Registrant\", \"attribute\":"
   + " \"Email\", \"value\": \"support@whoisxmlapi.com\", \"matchType\":"
   + " \"exact\", \"exclude\": \"false\"}], \"recordsCounter\": \"false\","
-  + " \"outputFormat\": \"json\", \"username\": \"your whois api username\", "
-  + " \"password\": \"your whois api password\", \"rows\": \"10\", "
+  + " \"outputFormat\": \"json\", \"username\":"
+  + " \"your reverse whois api username\","
+  + " \"password\": \"your reverse whois api password\", \"rows\": \"10\", "
   + "\"searchType\": \"current\"}");
 req.end();

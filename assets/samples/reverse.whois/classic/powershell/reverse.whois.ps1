@@ -1,7 +1,8 @@
 $uri = "https://www.whoisxmlapi.com/reverse-whois-api/"`
         +"search.php?mode=preview"`
         +"&term1=wikimedia"`
-        +"&username=your_whois_api_username&password=your_whois_api_password"`
+        +"&username=your_reverse_whois_api_username"`
+        +"&password=your_reverse_whois_api_password"`
         +"&outputFormat=json"
 
 

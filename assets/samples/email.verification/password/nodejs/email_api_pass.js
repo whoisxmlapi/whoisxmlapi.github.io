@@ -1,8 +1,8 @@
 var http = require('http');
 
 var email = 'support@whoisxmlapi.com';
-var password = 'your whois api password';
-var username = 'your whois api username';
+var password = 'your email verification api password';
+var username = 'your email verification api username';
 
 var url = 'https://www.whoisxmlapi.com/whoisserver/EmailVerifyService?' +
     'emailAddress=' + email +

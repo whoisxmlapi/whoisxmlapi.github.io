@@ -9,9 +9,9 @@ import hmac
 import time
 
 domain = 'test.com'
-key = 'Your whois api public key'
-secret = 'Your whois api secret key'
-username = 'Your whois api username'
+key = 'Your dns lookup api public key'
+secret = 'Your dns lookup api secret key'
+username = 'Your dns lookup api username'
 
 time = int(round(time.time() * 1000))
 req = base64.b64encode(

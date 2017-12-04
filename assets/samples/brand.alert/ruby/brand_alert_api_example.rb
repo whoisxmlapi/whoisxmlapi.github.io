@@ -2,8 +2,8 @@ require 'open-uri'
 require 'json'
 require 'yaml'	
 
-username = "Your whois api username"
-password = "Your whois api password"
+username = "Your brand alert api username"
+password = "Your brand alert api password"
 term1 = "cinema"
 exclude_term1 = 'movie'
 exclude_term2 = 'online'

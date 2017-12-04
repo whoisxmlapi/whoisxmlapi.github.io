@@ -5,9 +5,9 @@ import org.apache.commons.codec.binary.Hex;
 
 public class DnsLookupApiKey {
     public static final String DOMAIN = "test.com";
-    public static final String KEY = "Your whois api public key";
-    public static final String SECRET = "Your whois api secret key";
-    public static final String USERNAME = "Your whois api username";
+    public static final String KEY = "Your dns lookup api public key";
+    public static final String SECRET = "Your dns lookup api secret key";
+    public static final String USERNAME = "Your dns lookup api username";
     public static final String TYPE = "_all";
 
     public static void main(String[] args) throws Exception {

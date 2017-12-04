@@ -9,8 +9,8 @@ use warnings;
 my $base_url = "https://www.whoisxmlapi.com/whoisserver/DNSService";
 my $type = "_all";
 my $domain_name = "google.com";
-my $user_name = "Your whois api username";
-my $password = "Your whois api password";
+my $user_name = "Your dns lookup api username";
+my $password = "Your dns lookup api password";
 
 print "JSON\n---\n".getDnsData("json");
 

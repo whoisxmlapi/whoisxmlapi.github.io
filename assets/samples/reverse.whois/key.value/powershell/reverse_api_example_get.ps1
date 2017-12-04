@@ -1,5 +1,5 @@
-$username = "your whois api username"
-$password = "your whois api password"
+$username = "your reverse whois api username"
+$password = "your reverse whois api password"
 
 $uri = "https://www.whoisxmlapi.com/reverse-whois-api/search.php?"`
         +"term1=sample"`

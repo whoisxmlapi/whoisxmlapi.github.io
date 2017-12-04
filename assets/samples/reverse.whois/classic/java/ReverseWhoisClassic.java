@@ -3,8 +3,8 @@ public class ReverseWhoisClassic {
             String API_URL = 
                 "https://www.whoisxmlapi.com/reverse-whois-api/search.php";
             String term = "wikimedia";
-            String username="your whois api username";
-            String password="your whois api password";
+            String username="your reverse whois api username";
+            String password="your reverse whois api password";
             String url = API_URL + "?mode=preview"
                 + "&term1=" + term + "&outputFormat=json"
                 + "&username=" + username + "&password=" + password;

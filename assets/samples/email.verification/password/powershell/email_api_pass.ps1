@@ -1,5 +1,5 @@
-$username = "your whois api username"
-$password = "your whois api password"
+$username = "your email verification api username"
+$password = "your email verification api password"
 
 $emailAddress = "support@whoisxmlapi.com"
 

@@ -1,9 +1,9 @@
 <?php
 
 $email = 'support@whoisxmlapi.com';
-$key = 'Your whois api public key';
-$secret = 'your whois api secret key';
-$username = 'your whois api username';
+$key = 'Your email verification api public key';
+$secret = 'your email verification api secret key';
+$username = 'your email verification api username';
 
 $time = round(microtime(true) * 1000);
 $reqObj = urlencode(base64_encode("{\"t\":{$time},\"u\":\"{$username}\"}"));

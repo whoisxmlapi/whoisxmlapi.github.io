@@ -9,9 +9,9 @@ import hmac
 import time
 
 email = 'support@whoisxmlapi.com'
-key = 'your whois api public key'
-secret = 'your whois api secret key'
-username = 'your whois api username'
+key = 'your email verification api public key'
+secret = 'your email verification api secret key'
+username = 'your email verification api username'
 
 time = int(round(time.time() * 1000))
 req = base64.b64encode(

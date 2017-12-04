@@ -5,8 +5,8 @@ public class EmailAPIQuery {
             String dns = "true", smtp = "true", catchAll = "true";
             String free ="true", disposable = "true";
             String email = "support@whoisxmlapi.com";
-            String username="your whois api username";
-            String password="your whois api password";
+            String username="your email verification api username";
+            String password="your email verification api password";
             String url = API_URL + "?emailAddress=" + email 
                 + "&validateDNS=" + dns + "&outputFormat=json"
                 + "&validateSMTP=" + smtp + "&checkCatchAll=" + catchAll

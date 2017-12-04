@@ -7,8 +7,8 @@ except ImportError:
 import json, time
 
 domains = ['whoisxmlapi.com', 'threatintelligenceplatform.com']
-username = 'Your whois api username'
-password = 'Your whois api password'
+username = 'Your bulk whois api username'
+password = 'Your bulk whois api password'
 output_format = 'json'
 interval = 10
 

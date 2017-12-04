@@ -2,8 +2,8 @@
 
 public class dnsApiPass {
     static void Main(string[] args) {
-        string username = "Your whois api username";
-        string password = "Your whois api password";
+        string username = "Your dns lookup api username";
+        string password = "Your dns lookup api password";
         string domain = "google.com";
         string format = "JSON";
         string url =

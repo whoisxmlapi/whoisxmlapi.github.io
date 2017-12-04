@@ -17,8 +17,8 @@ public class ReverseApiQuery {
                 + "\"support@whoisxmlapi.com\", \"matchType\": \"exact\", "
                 + "\"exclude\": \"false\"}], \"recordsCounter\": \"false\","
                 + " \"outputFormat\": \"json\", \"username\":"
-                + " \"your whois api username\", \"password\":"
-                + " \"your whois api password\", \"rows\": \"10\", "
+                + " \"your reverse whois api username\", \"password\":"
+                + " \"your reverse whois api password\", \"rows\": \"10\", "
                 + "\"searchType\": \"current\"}");
         wr.flush(); wr.close();
         BufferedReader reader = new BufferedReader(

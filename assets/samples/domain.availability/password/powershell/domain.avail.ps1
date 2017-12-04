@@ -1,6 +1,6 @@
 $domain = "example.com"
-$password = "your whois api password"
-$username = "your whois api username"
+$password = "your domain availability api password"
+$username = "your domain availability api username"
 
 $uri = "https://www.whoisxmlapi.com/whoisserver/WhoisService?"`
      + "domainName=$($domain)&username=$($username)&password=$($password)"`

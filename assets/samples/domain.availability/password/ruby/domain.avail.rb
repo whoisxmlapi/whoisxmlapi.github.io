@@ -1,8 +1,8 @@
 require 'open-uri'
 
 domain = 'example.com'
-password = 'Your whois api password'
-username = 'Your whois api username'
+password = 'Your domain availability api password'
+username = 'Your domain availability api username'
 
 url = 'http://www.whoisxmlapi.com/whoisserver/WhoisService?'\
     + 'domainName=' + domain + '&username=' +username + '&password=' +password\

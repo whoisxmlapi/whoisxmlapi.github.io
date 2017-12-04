@@ -19,9 +19,9 @@ namespace ReverseWhoisApi
                 + "\"Email\", \"value\": \"support@whoisxmlapi.com\", "
                 + "\"matchType\": \"exact\", \"exclude\": \"false\"}], "
                 + "\"recordsCounter\": \"false\", \"outputFormat\": \"json\","
-                + " \"username\": \"your whois api username\", \"password\": "
-                + "\"your whois api password\", \"rows\": \"10\", "
-                + "\"searchType\": \"current\"\n}");
+                + " \"username\": \"your reverse whois api username\", "
+                + " \"password\": \"your reverse whois api password\", "
+                + " \"rows\": \"10\", \"searchType\": \"current\"\n}");
             Stream stream = request.GetRequestStream();
             stream.Write(data, 0, data.Length); stream.Close();
 

@@ -4,8 +4,8 @@ using System.IO;
 
 class Program {
     public const string EMAIL = "support@whoisxmlapi.com";
-    public const string PASSWORD = "your whois api password";
-    public const string USERNAME = "your whois api username";
+    public const string PASSWORD = "your email verification api password";
+    public const string USERNAME = "your email verification api username";
 
     static void Main() {
         string url = "http://www.whoisxmlapi.com/whoisserver/EmailVerifyService?"

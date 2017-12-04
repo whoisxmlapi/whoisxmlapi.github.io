@@ -1,9 +1,9 @@
 <?php
 
 $domain = 'example.com';
-$key = 'your whois api key';
-$secret = 'your whois api secret key';
-$username = 'your whois api username';
+$key = 'your domain availability api key';
+$secret = 'your domain availability api secret key';
+$username = 'your domain availability api username';
 
 $time = round(microtime(true) * 1000);
 $reqObj = urlencode(base64_encode("{\"t\":{$time},\"u\":\"{$username}\"}"));

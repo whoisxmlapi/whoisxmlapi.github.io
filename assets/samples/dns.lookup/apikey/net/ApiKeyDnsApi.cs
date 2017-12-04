@@ -6,9 +6,9 @@ using System.Text;
 
 class Program {
     public const string domain = "example.com";
-    public const string key = "your whois api key";
-    public const string secret = "your whois api secret key";
-    public const string username = "your whois api username";
+    public const string key = "your dns lookup api key";
+    public const string secret = "your dns lookup api secret key";
+    public const string username = "your dns lookup api username";
     public const string type = "_all";
 
     static void Main() {

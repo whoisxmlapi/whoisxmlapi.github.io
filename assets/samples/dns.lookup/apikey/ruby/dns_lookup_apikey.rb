@@ -3,9 +3,9 @@ require 'openssl'
 require 'open-uri'
 
 domain = 'test.com'
-key = 'your public whois api key'
-secret = 'your secret whois api key'
-username = 'your whois api username'
+key = 'your public dns lookup api key'
+secret = 'your secret dns lookup api key'
+username = 'your dns lookup api username'
 
 time = (Time.now.to_f * 1000).to_i
 req = Base64.encode64('{"t":' + time.to_s + ',"u":"' + username + '"}')

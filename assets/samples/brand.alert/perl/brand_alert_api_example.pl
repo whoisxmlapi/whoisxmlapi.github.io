@@ -10,8 +10,8 @@ my $base_url = "https://www.whoisxmlapi.com/brand-alert-api/search.php";
 my $term1 = "whois";
 my $exclude_term1 = "domain";
 my $exclude_term2 = "news";
-my $user_name = "Your whois api username";
-my $password = "Your whois api password";
+my $user_name = "Your brand alert api username";
+my $password = "Your brand alert api password";
 
 print "JSON\n---\n".getDnsData("json");
 

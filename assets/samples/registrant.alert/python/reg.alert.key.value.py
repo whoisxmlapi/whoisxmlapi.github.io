@@ -3,8 +3,8 @@ try:
 except:
     import httplib as http
 
-password = 'your whois api password'
-username = 'your whois api username'
+password = 'your registrant alert api password'
+username = 'your registrant alert api username'
 
 payload = '{ "terms": [{ "section": "Registrant", "attribute": "Email",\
                          "value": "a@b.com", "exclude": false }],\

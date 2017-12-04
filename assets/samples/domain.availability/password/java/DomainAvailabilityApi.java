@@ -1,7 +1,9 @@
 public class DomainAvailabilityApi {
     public static final String DOMAIN = "example.com";
-    public static final String PASSWORD = "Your whois api password";
-    public static final String USERNAME = "Your whois api username";
+    public static final String PASSWORD =
+        "Your domain availability api password";
+    public static final String USERNAME =
+        "Your domain availability api username";
 
     public static void main(String[] args) throws Exception {
         String url = "http://www.whoisxmlapi.com/whoisserver/WhoisService"

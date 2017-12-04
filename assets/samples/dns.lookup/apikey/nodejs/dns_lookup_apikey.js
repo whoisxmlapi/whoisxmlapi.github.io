@@ -2,9 +2,9 @@ var crypto = require('crypto');
 var http = require('http');
 
 var domain = 'example.com';
-var key = 'your whois api key';
-var secret = 'your whois api secret key';
-var username = 'your whois api username';
+var key = 'your dns lookup api key';
+var secret = 'your dns lookup api secret key';
+var username = 'your dns lookup api username';
 
 var time = (new Date).getTime();
 var req = Buffer.from('{"t":'+time+',"u":"'+username+'"}').toString('base64');

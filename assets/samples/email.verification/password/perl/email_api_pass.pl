@@ -6,8 +6,8 @@ use Data::Dumper;
 use strict;
 use warnings;
 
-my $user_name = "your whois api username";
-my $password = "your whois api password";
+my $user_name = "your email verification api username";
+my $password = "your email verification api password";
 
 my $emailAddress = 'support@whoisxmlapi.com';
 my $base_url = 'https://www.whoisxmlapi.com/whoisserver/EmailVerifyService';

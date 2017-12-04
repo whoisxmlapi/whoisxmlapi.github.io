@@ -1,7 +1,7 @@
 <?php
 
-$password = 'your whois api password';
-$user = 'your whois api username';
+$password = 'your registrant alert api password';
+$user = 'your registrant alert api username';
 
 $header = "Content-Type: application/json\r\nAccept: application/json\r\n";
 $options = array('http' => array('method' => 'POST', 'header' => $header));
