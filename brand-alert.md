@@ -1,3 +1,8 @@
+---
+title: Brand Alert API Code Samples
+repository_url: //github.com/whois-api-llc/brand-alert
+releases_url: //github.com/whois-api-llc/brand-alert/releases
+---
 <div class="toc">
 	<a class="button" href="./bulk-whois"><div class="toc-item">Bulk Whois API</div></a>
 	<a class="button" href="./dns-lookup"><div class="toc-item">DNS Lookup API</div></a>

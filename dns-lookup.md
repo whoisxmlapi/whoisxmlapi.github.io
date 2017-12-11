@@ -1,3 +1,8 @@
+---
+title: DNS Lookup API Code Samples
+repository_url: //github.com/whois-api-llc/dns-lookup
+releases_url: //github.com/whois-api-llc/dns-lookup/releases
+---
 <div class="toc">
     <a class="button" href="./brand-alert"><div class="toc-item">Brand Alert API</div></a>
 	<a class="button" href="./bulk-whois"><div class="toc-item">Bulk Whois API</div></a>

@@ -6,6 +6,7 @@ description: >
 logo: https://static.whoisxmlapi.com/images/logo.png
 repository: whois-api-llc/whoisxmlapi-samples
 show_downloads: true
+show_repo_url: true
 social:
     name: Whois API, LLC
     links:
@@ -18,3 +19,5 @@ exclude: ["README.md"]
 sass:
     sass_dir: assets/_sass
 layouts_dir: assets/_layouts
+default_repository_url: //github.com/whois-api-llc/
+default_releases_url: //github.com/whois-api-llc/

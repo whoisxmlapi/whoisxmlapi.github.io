@@ -1,3 +1,8 @@
+---
+title: Bulk Whois API Code Samples
+repository_url: //github.com/whois-api-llc/bulk-whois
+releases_url: //github.com/whois-api-llc/bulk-whois/releases
+---
 <div class="toc">
     <a class="button" href="./brand-alert"><div class="toc-item">Brand Alert API</div></a>
 	<a class="button" href="./dns-lookup"><div class="toc-item">DNS Lookup API</div></a>
