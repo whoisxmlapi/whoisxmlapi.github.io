@@ -12,7 +12,7 @@
 
 
 Here you'll find short examples of using
-[www.whoisxmlapi.com](https://www.whoisxmlapi.com/) Hosted Email Verification Web API
+[emailverification.whoisxmlapi.com](https://emailverification.whoisxmlapi.com/) Hosted Email Verification Web API
 implemented in multiple languages.
 
 You can view more sample code, incl. dealing with the API's response formats,
@@ -21,98 +21,8 @@ regenerating access tokens and more, in the
 
 
 Please, refer to
-[Email Verification API User Guide](https://www.whoisxmlapi.com/email-verification-api-guide.php) for
+[Email Verification API User Guide](https://emailverification.whoisxmlapi.com/docs) for
 authentication instructions.
-
-## Password authentication
-
-<ul id="profileTabs" class="nav nav-tabs" role="tablist">
-    <li class="active"><a href="#csharp" data-toggle="tab">C#</a></li>
-    <li><a href="#java" data-toggle="tab">Java</a></li>
-    <li><a href="#jquery" data-toggle="tab">jQuery</a></li>
-    <li><a href="#nodejs" data-toggle="tab">Node.js</a></li>
-    <li><a href="#php" data-toggle="tab">PHP</a></li>
-    <li><a href="#perl" data-toggle="tab">Perl</a></li>
-    <li><a href="#powershell" data-toggle="tab">PowerShell</a></li>
-    <li><a href="#python" data-toggle="tab">Python</a></li>
-    <li><a href="#ruby" data-toggle="tab">Ruby</a></li>
-</ul>
-
-<div class="tab-content">
-
-<div role="tabpanel" class="tab-pane active" id="csharp">
-<div class="container-fluid" markdown="1"> 
-```c#
-{% include_relative assets/samples/email.verification/password/net/EmailApiPass.cs %}
-```
-</div>
-</div>
-
-<div role="tabpanel" class="tab-pane" id="java">
-<div class="container-fluid" markdown="1"> 
-```java
-{% include_relative assets/samples/email.verification/password/java/EmailAPIQuery.java %}
-```
-</div>
-</div>
-
-<div role="tabpanel" class="tab-pane" id="jquery">
-<div class="container-fluid" markdown="1">
-```html
-{% include_relative assets/samples/email.verification/password/js/email_api_pass.html %}
-```
-</div>
-</div>
-
-<div role="tabpanel" class="tab-pane" id="nodejs">
-<div class="container-fluid" markdown="1">
-```js
-{% include_relative assets/samples/email.verification/password/nodejs/email_api_pass.js %}
-```
-</div>
-</div>
-
-<div role="tabpanel" class="tab-pane" id="php">
-<div class="container-fluid" markdown="1">
-```php
-{% include_relative assets/samples/email.verification/password/php/email_api_pass.php %}
-```
-</div>
-</div>
-
-<div role="tabpanel" class="tab-pane" id="perl">
-<div class="container-fluid" markdown="1">
-```perl
-{% include_relative assets/samples/email.verification/password/perl/email_api_pass.pl %}
-```
-</div>
-</div>
-
-<div role="tabpanel" class="tab-pane" id="powershell">
-<div class="container-fluid" markdown="1">
-```posh
-{% include_relative assets/samples/email.verification/password/powershell/email_api_pass.ps1 %}
-```
-</div>
-</div>
-
-<div role="tabpanel" class="tab-pane" id="python">
-<div class="container-fluid" markdown="1">
-```python
-{% include_relative assets/samples/email.verification/password/python/email_api_pass.py %}
-```
-</div>
-</div>
-
-<div role="tabpanel" class="tab-pane" id="ruby">
-<div class="container-fluid" markdown="1">
-```ruby
-{% include_relative assets/samples/email.verification/password/ruby/email_api_pass.rb %}
-```
-</div>
-</div>
-
-</div>
 
 ## API key authentication
 
@@ -133,7 +43,7 @@ authentication instructions.
 <div role="tabpanel" class="tab-pane active" id="csharp-key">
 <div class="container-fluid" markdown="1"> 
 ```c#
-{% include_relative assets/samples/email.verification/apikey/net/ApiKeyEmailApi.cs %}
+{% include_relative assets/samples/email.verification/net/EmailApi.cs %}
 ```
 </div>
 </div>
@@ -141,7 +51,7 @@ authentication instructions.
 <div role="tabpanel" class="tab-pane" id="java-key">
 <div class="container-fluid" markdown="1"> 
 ```java
-{% include_relative assets/samples/email.verification/apikey/java/ApiKeyEmailApi.java %}
+{% include_relative assets/samples/email.verification/java/EmailAPIQuery.java %}
 ```
 </div>
 </div>
@@ -149,7 +59,7 @@ authentication instructions.
 <div role="tabpanel" class="tab-pane" id="jquery-key">
 <div class="container-fluid" markdown="1"> 
 ```html
-{% include_relative assets/samples/email.verification/apikey/js/email_apikey.html %}
+{% include_relative assets/samples/email.verification/js/email_api.html %}
 ```
 </div>
 </div>
@@ -157,7 +67,7 @@ authentication instructions.
 <div role="tabpanel" class="tab-pane" id="nodejs-key">
 <div class="container-fluid" markdown="1"> 
 ```js
-{% include_relative assets/samples/email.verification/apikey/nodejs/email_apikey.js %}
+{% include_relative assets/samples/email.verification/nodejs/email_api.js %}
 ```
 </div>
 </div>
@@ -165,7 +75,7 @@ authentication instructions.
 <div role="tabpanel" class="tab-pane" id="php-key">
 <div class="container-fluid" markdown="1"> 
 ```php
-{% include_relative assets/samples/email.verification/apikey/php/email_apikey.php %}
+{% include_relative assets/samples/email.verification/php/email_api.php %}
 ```
 </div>
 </div>
@@ -173,7 +83,7 @@ authentication instructions.
 <div role="tabpanel" class="tab-pane" id="perl-key">
 <div class="container-fluid" markdown="1"> 
 ```perl
-{% include_relative assets/samples/email.verification/apikey/perl/email_apikey.pl %}
+{% include_relative assets/samples/email.verification/perl/email_api.pl %}
 ```
 </div>
 </div>
@@ -181,7 +91,7 @@ authentication instructions.
 <div role="tabpanel" class="tab-pane" id="powershell-key">
 <div class="container-fluid" markdown="1"> 
 ```posh
-{% include_relative assets/samples/email.verification/apikey/powershell/email_apikey.ps1 %}
+{% include_relative assets/samples/email.verification/powershell/email_api.ps1 %}
 ```
 </div>
 </div>
@@ -189,7 +99,7 @@ authentication instructions.
 <div role="tabpanel" class="tab-pane" id="python-key">
 <div class="container-fluid" markdown="1"> 
 ```python
-{% include_relative assets/samples/email.verification/apikey/python/email_apikey.py %}
+{% include_relative assets/samples/email.verification/python/email_api.py %}
 ```
 </div>
 </div>
@@ -197,7 +107,7 @@ authentication instructions.
 <div role="tabpanel" class="tab-pane" id="ruby-key">
 <div class="container-fluid" markdown="1"> 
 ```ruby
-{% include_relative assets/samples/email.verification/apikey/ruby/email_apikey.rb %}
+{% include_relative assets/samples/email.verification/ruby/email_api.rb %}
 ```
 </div>
 </div>

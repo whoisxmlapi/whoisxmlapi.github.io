@@ -4,15 +4,12 @@ using System.IO;
 
 class Program {
     public const string EMAIL = "support@whoisxmlapi.com";
-    public const string PASSWORD = "your email verification api password";
-    public const string USERNAME = "your email verification api username";
+    public const string API_KEY = "Your email verification api API_KEY";
 
     static void Main() {
-        string url = "http://www.whoisxmlapi.com/whoisserver/EmailVerifyService?"
-                   + $"emailAddress={DOMAIN}&username={USERNAME}"
-                   + $"&password={PASSWORD}&checkFree=true&checkDNS=true"
-                   + $"&checkSMTP=true&checkCatchAll=true&checkDisposable=true";
-        string whoisData = string.Empty;
+        string url = "https://emailverification.whoisxmlapi.com/api/v1?"
+                   + $"emailAddress={DOMAIN}&apiKey={API_KEY}";
+        string resultDataData = string.Empty;
 
         HttpWebRequest req = (HttpWebRequest)WebRequest.Create(url);
 
