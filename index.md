@@ -2,6 +2,7 @@
 title: Whois API Code Samples
 repository_url: //github.com/whois-api-llc/whois
 releases_url: //github.com/whois-api-llc/whois/releases
+header: Whois API
 ---
 <div class="toc">
     <a class="button" href="./brand-alert"><div class="toc-item">Brand Alert API</div></a>

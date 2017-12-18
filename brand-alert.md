@@ -2,6 +2,7 @@
 title: Brand Alert API Code Samples
 repository_url: //github.com/whois-api-llc/brand-alert
 releases_url: //github.com/whois-api-llc/brand-alert/releases
+header: Brand Alert API
 ---
 <div class="toc">
 	<a class="button" href="./bulk-whois"><div class="toc-item">Bulk Whois API</div></a>

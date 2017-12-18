@@ -2,6 +2,7 @@
 title: Email Verification API Code Samples
 repository_url: //github.com/whois-api-llc/email-verification
 releases_url: //github.com/whois-api-llc/email-verification/releases
+header: Email Verification API
 ---
 <div class="toc">
     <a class="button" href="./brand-alert"><div class="toc-item">Brand Alert API</div></a>

@@ -2,13 +2,14 @@
 title: Bulk Whois API Code Samples
 repository_url: //github.com/whois-api-llc/bulk-whois
 releases_url: //github.com/whois-api-llc/bulk-whois/releases
+header: Bulk Whois API
 ---
 <div class="toc">
     <a class="button" href="./brand-alert"><div class="toc-item">Brand Alert API</div></a>
 	<a class="button" href="./dns-lookup"><div class="toc-item">DNS Lookup API</div></a>
     <a class="button" href="./domain-availability"><div class="toc-item">Domain Availability API</div></a>
-	<a class="button" href="./email.verification"><div class="toc-item">Email Verification API</div></a>
-    <a class="button" href="./regiastrant-alert"><div class="toc-item">Registrant Alert API</div></a>
+	<a class="button" href="./email-verification"><div class="toc-item">Email Verification API</div></a>
+    <a class="button" href="./registrant-alert"><div class="toc-item">Registrant Alert API</div></a>
     <a class="button" href="./reverse-whois"><div class="toc-item">Reverse Whois API</div></a>
 	<a class="button" href="./"><div class="toc-item">Whois API</div></a>
 </div>

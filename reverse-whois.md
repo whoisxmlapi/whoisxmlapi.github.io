@@ -1,7 +1,8 @@
 ---
-title: Reverse Whois API Samples
+title: Reverse Whois API Code Samples
 repository_url: //github.com/whois-api-llc/reverse-whois
 releases_url: //github.com/whois-api-llc/reverse-whois/releases
+header: Reverse Whois API
 ---
 <div class="toc">
     <a class="button" href="./brand-alert"><div class="toc-item">Brand Alert API</div></a>
@@ -9,7 +10,7 @@ releases_url: //github.com/whois-api-llc/reverse-whois/releases
 	<a class="button" href="./dns-lookup"><div class="toc-item">DNS Lookup API</div></a>
     <a class="button" href="./domain-availability"><div class="toc-item">Domain Availability API</div></a>
 	<a class="button" href="./email-verification"><div class="toc-item">Email Verification API</div></a>
-    <a class="button" href="./registration-alert"><div class="toc-item">Registrant Alert API</div></a>
+    <a class="button" href="./registrant-alert"><div class="toc-item">Registrant Alert API</div></a>
     <a class="button" href="./"><div class="toc-item">Whois API</div></a>
 </div>
 

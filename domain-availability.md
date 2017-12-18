@@ -2,6 +2,7 @@
 title: Domain Availability API Code Samples
 repository_url: //github.com/whois-api-llc/domain-availability
 releases_url: //github.com/whois-api-llc/domain-availability/releases
+header: Domain Availability API
 ---
 <div class="toc">
     <a class="button" href="./brand-alert"><div class="toc-item">Brand Alert API</div></a>

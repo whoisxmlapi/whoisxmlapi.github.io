@@ -12,7 +12,7 @@
   <body>
     <img src="assets/img/logo.png" alt="Whois XML API" class="center wh-logo">
     <section class="page-header wh-header">
-      <h1 class="project-name">{{ site.title | default: site.github.repository_name }}</h1>
+      <h1 class="project-name">{{ page.header | default: site.github.repository_name }}</h1>
       <h2 class="project-tagline">{{ site.description | default: site.github.project_tagline }}</h2>
       {% if site.show_repo_url %}
         <a href="{{ page.repository_url | default: site.default_repository_url}}" class="btn">View on GitHub</a>
