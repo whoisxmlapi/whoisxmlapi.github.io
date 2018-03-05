@@ -1,10 +1,11 @@
 ---
-title: Brand Alert API Code Samples
-repository_url: //github.com/whois-api-llc/brand-alert
-releases_url: //github.com/whois-api-llc/brand-alert/releases
-header: Brand Alert API
+title: Whois API 2.0 Code Samples
+repository_url: //github.com/whois-api-llc/whois2
+releases_url: //github.com/whois-api-llc/whois2/releases
+header: WHOIS API 2.0
 ---
 <div class="toc">
+    <a class="button" href="./brand-alert"><div class="toc-item">Brand Alert API</div></a>
 	<a class="button" href="./bulk-whois"><div class="toc-item">Bulk Whois API</div></a>
 	<a class="button" href="./dns-lookup"><div class="toc-item">DNS Lookup API</div></a>
     <a class="button" href="./domain-availability"><div class="toc-item">Domain Availability API</div></a>
@@ -12,24 +13,23 @@ header: Brand Alert API
     <a class="button" href="./registrant-alert"><div class="toc-item">Registrant Alert API</div></a>
     <a class="button" href="./reverse-whois"><div class="toc-item">Reverse Whois API</div></a>
     <a class="button" href="./"><div class="toc-item">Whois API</div></a>
-    <a class="button" href="./whois-api-2"><div class="toc-item">Whois API 2.0</div></a>
 </div>
 
-# Making a query to Brand Alert API web service
+# Making a query to Whois API 2.0 web service
 
 
 Here you'll find short examples of using
-[www.whoisxmlapi.com](https://www.whoisxmlapi.com/) Hosted Brand Alert Web API
+[Hosted Whois Web API 2.0](https://whoisapi.whoisxmlapi.com/)
 implemented in multiple languages.
 
-You can view more sample code, incl. dealing with the API's response formats,
-request parameters and more, in the
+You can view more sample code in the
 [repository]({{ page.repository_url }}).
 
-
 Please, refer to
-[Brand Alert API User Guide](https://www.whoisxmlapi.com/brand-alert-api-guide.php) for
-request parameters and response schema descrption
+[Whois API 2.0 Docs](https://whoisapi.whoisxmlapi.com/docs) for
+authentication instructions.
+
+## API key authentication
 
 <ul id="profileTabs" class="nav nav-tabs" role="tablist">
     <li class="active"><a href="#csharp" data-toggle="tab">C#</a></li>
@@ -48,7 +48,7 @@ request parameters and response schema descrption
 <div role="tabpanel" class="tab-pane active" id="csharp">
 <div class="container-fluid" markdown="1"> 
 ```c#
-{% include_relative assets/samples/brand.alert/net/brandAlertApiExample.cs %}
+{% include_relative assets/samples/whois2/net/WhoisApiQuery.cs %}
 ```
 </div>
 </div>
@@ -56,7 +56,7 @@ request parameters and response schema descrption
 <div role="tabpanel" class="tab-pane" id="java">
 <div class="container-fluid" markdown="1"> 
 ```java
-{% include_relative assets/samples/brand.alert/java/BrandAlertApiQuery.java %}
+{% include_relative assets/samples/whois2/java/WhoisApiQuery.java %}
 ```
 </div>
 </div>
@@ -64,7 +64,7 @@ request parameters and response schema descrption
 <div role="tabpanel" class="tab-pane" id="jquery">
 <div class="container-fluid" markdown="1">
 ```html
-{% include_relative assets/samples/brand.alert/js/brand_alert_api_example.html %}
+{% include_relative assets/samples/whois2/js/whois-api-query.html %}
 ```
 </div>
 </div>
@@ -72,7 +72,7 @@ request parameters and response schema descrption
 <div role="tabpanel" class="tab-pane" id="nodejs">
 <div class="container-fluid" markdown="1">
 ```js
-{% include_relative assets/samples/brand.alert/nodejs/brand_alert_api_example.js %}
+{% include_relative assets/samples/whois2/nodejs/WhoisApiQuery.js %}
 ```
 </div>
 </div>
@@ -80,7 +80,7 @@ request parameters and response schema descrption
 <div role="tabpanel" class="tab-pane" id="php">
 <div class="container-fluid" markdown="1">
 ```php
-{% include_relative assets/samples/brand.alert/php/brand_alert_api_example.php %}
+{% include_relative assets/samples/whois2/php/WhoisApiQuery.php %}
 ```
 </div>
 </div>
@@ -88,7 +88,7 @@ request parameters and response schema descrption
 <div role="tabpanel" class="tab-pane" id="perl">
 <div class="container-fluid" markdown="1">
 ```perl
-{% include_relative assets/samples/brand.alert/perl/brand_alert_api_example.pl %}
+{% include_relative assets/samples/whois2/perl/WhoisApiQuery.pl %}
 ```
 </div>
 </div>
@@ -96,7 +96,7 @@ request parameters and response schema descrption
 <div role="tabpanel" class="tab-pane" id="powershell">
 <div class="container-fluid" markdown="1">
 ```posh
-{% include_relative assets/samples/brand.alert/powershell/brand_alert_api_example.ps1 %}
+{% include_relative assets/samples/whois2/powershell/WhoisApiQuery.ps1 %}
 ```
 </div>
 </div>
@@ -104,7 +104,7 @@ request parameters and response schema descrption
 <div role="tabpanel" class="tab-pane" id="python">
 <div class="container-fluid" markdown="1">
 ```python
-{% include_relative assets/samples/brand.alert/python/brand_alert_api_example.py %}
+{% include_relative assets/samples/whois2/python/WhoisApiQuery.py %}
 ```
 </div>
 </div>
@@ -112,10 +112,9 @@ request parameters and response schema descrption
 <div role="tabpanel" class="tab-pane" id="ruby">
 <div class="container-fluid" markdown="1">
 ```ruby
-{% include_relative assets/samples/brand.alert/ruby/brand_alert_api_example.rb %}
+{% include_relative assets/samples/whois2/ruby/WhoisApiQuery.rb %}
 ```
 </div>
 </div>
 
 </div>
-

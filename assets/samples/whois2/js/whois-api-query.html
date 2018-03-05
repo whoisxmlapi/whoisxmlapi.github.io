@@ -1,0 +1,16 @@
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript">
+    var domain = "example.com";
+    var apiKey = "your whois api key";
+
+    $(function () {
+        $.ajax({
+            url: "http://www.whoisxmlapi.com/whoisserver/WhoisService",
+            dataType: "jsonp",
+            data: {domainName: domain, apiKey: apiKey, outputFormat: "JSON"},
+            success: function(data) {
+                $("body").append("<pre>"+ JSON.stringify(data,"",2)+"</pre>");
+            }
+        });
+    });
+</script>

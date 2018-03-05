@@ -12,6 +12,7 @@ header: Bulk Whois API
     <a class="button" href="./registrant-alert"><div class="toc-item">Registrant Alert API</div></a>
     <a class="button" href="./reverse-whois"><div class="toc-item">Reverse Whois API</div></a>
 	<a class="button" href="./"><div class="toc-item">Whois API</div></a>
+	<a class="button" href="./whois-api-2"><div class="toc-item">Whois API 2.0</div></a>
 </div>
 
 # Making a query to Bulk Whois API web service
@@ -23,7 +24,7 @@ implemented in multiple languages.
 
 You can view more sample code, incl. dealing with the API's response formats,
 requests order and more, in the
-[repository]({{ site.github.repository_url }}).
+[repository]({{ page.repository_url }}).
 
 
 Please, refer to
