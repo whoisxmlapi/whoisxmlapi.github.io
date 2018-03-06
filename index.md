@@ -15,7 +15,11 @@ header: Whois API
     <a class="button" href="./whois-api-2"><div class="toc-item">Whois API 2.0</div></a>
 </div>
 
-# Making a query to Whois API web service
+# Warning
+> This version of Whois API is obsolete. It is strongly recommended to use [Whois API 2.0](/whois-api-2)
+
+
+## Making a query to Whois API web service
 
 
 Here you'll find short examples of using
@@ -31,7 +35,7 @@ Please, refer to
 [Whois API User Guide](https://www.whoisxmlapi.com/whois-api-guide.php) for
 authentication instructions.
 
-## Password authentication
+### Password authentication
 
 <ul id="profileTabs" class="nav nav-tabs" role="tablist">
     <li class="active"><a href="#csharp" data-toggle="tab">C#</a></li>
@@ -121,7 +125,7 @@ authentication instructions.
 
 </div>
 
-## API key authentication
+### API key authentication
 
 <ul id="profileTabs" class="nav nav-tabs" role="tablist">
     <li class="active"><a href="#csharp-key" data-toggle="tab">C#</a></li>
