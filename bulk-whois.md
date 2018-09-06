@@ -33,8 +33,9 @@ Please, refer to
 
 <ul id="profileTabs" class="nav nav-tabs" role="tablist">
     <li class="active"><a href="#nodejs" data-toggle="tab">Node.js</a></li>
-    <li><a href="#python" data-toggle="tab">Python</a></li>
     <li><a href="#php" data-toggle="tab">PHP</a></li>
+    <li><a href="#python" data-toggle="tab">Python</a></li>
+    <li><a href="#ruby" data-toggle="tab">Ruby</a></li>
 </ul>
 
 <div class="tab-content">
@@ -47,6 +48,14 @@ Please, refer to
 </div>
 </div>
 
+<div role="tabpanel" class="tab-pane" id="php">
+<div class="container-fluid" markdown="1">
+```php
+{% include_relative assets/samples/bulk.whois/php/bulkwhois.php %}
+```
+</div>
+</div>
+
 <div role="tabpanel" class="tab-pane" id="python">
 <div class="container-fluid" markdown="1">
 ```python
@@ -55,10 +64,10 @@ Please, refer to
 </div>
 </div>
 
-<div role="tabpanel" class="tab-pane" id="php">
+<div role="tabpanel" class="tab-pane" id="ruby">
 <div class="container-fluid" markdown="1">
 ```php
-{% include_relative assets/samples/bulk.whois/php/bulkwhois.php %}
+{% include_relative assets/samples/bulk.whois/ruby/bulk_whois.rb %}
 ```
 </div>
 </div>
