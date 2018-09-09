@@ -35,6 +35,7 @@ Please, refer to
     <li class="active"><a href="#jquery" data-toggle="tab">jQuery</a></li>
     <li><a href="#nodejs" data-toggle="tab">Node.js</a></li>
     <li><a href="#php" data-toggle="tab">PHP</a></li>
+    <li><a href="#powershell" data-toggle="tab">PowerShell</a></li>
     <li><a href="#python" data-toggle="tab">Python</a></li>
     <li><a href="#ruby" data-toggle="tab">Ruby</a></li>
 </ul>
@@ -61,6 +62,14 @@ Please, refer to
 <div class="container-fluid" markdown="1">
 ```php
 {% include_relative assets/samples/bulk.whois/php/bulkwhois.php %}
+```
+</div>
+</div>
+
+<div role="tabpanel" class="tab-pane" id="powershell">
+<div class="container-fluid" markdown="1">
+```php
+{% include_relative assets/samples/bulk.whois/powershell/bulk_whois.ps1 %}
 ```
 </div>
 </div>
