@@ -32,7 +32,8 @@ Please, refer to
  request and response formats, usage limits.
 
 <ul id="profileTabs" class="nav nav-tabs" role="tablist">
-    <li class="active"><a href="#nodejs" data-toggle="tab">Node.js</a></li>
+    <li class="active"><a href="#jquery" data-toggle="tab">jQuery</a></li>
+    <li><a href="#nodejs" data-toggle="tab">Node.js</a></li>
     <li><a href="#php" data-toggle="tab">PHP</a></li>
     <li><a href="#python" data-toggle="tab">Python</a></li>
     <li><a href="#ruby" data-toggle="tab">Ruby</a></li>
@@ -40,7 +41,15 @@ Please, refer to
 
 <div class="tab-content">
 
-<div role="tabpanel" class="tab-pane active" id="nodejs">
+<div role="tabpanel" class="tab-pane active" id="jquery">
+<div class="container-fluid" markdown="1">
+```html
+{% include_relative assets/samples/bulk.whois/js/bulk_whois.html %}
+```
+</div>
+</div>
+
+<div role="tabpanel" class="tab-pane" id="nodejs">
 <div class="container-fluid" markdown="1">
 ```js
 {% include_relative assets/samples/bulk.whois/node/bulk.search.js %}
