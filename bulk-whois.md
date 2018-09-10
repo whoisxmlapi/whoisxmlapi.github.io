@@ -34,6 +34,7 @@ Please, refer to
 <ul id="profileTabs" class="nav nav-tabs" role="tablist">
     <li class="active"><a href="#jquery" data-toggle="tab">jQuery</a></li>
     <li><a href="#nodejs" data-toggle="tab">Node.js</a></li>
+    <li><a href="#perl" data-toggle="tab">Perl</a></li>
     <li><a href="#php" data-toggle="tab">PHP</a></li>
     <li><a href="#powershell" data-toggle="tab">PowerShell</a></li>
     <li><a href="#python" data-toggle="tab">Python</a></li>
@@ -58,6 +59,14 @@ Please, refer to
 </div>
 </div>
 
+<div role="tabpanel" class="tab-pane" id="perl">
+<div class="container-fluid" markdown="1">
+```perl
+{% include_relative assets/samples/bulk.whois/perl/bulk_whois.pl %}
+```
+</div>
+</div>
+
 <div role="tabpanel" class="tab-pane" id="php">
 <div class="container-fluid" markdown="1">
 ```php
@@ -68,7 +77,7 @@ Please, refer to
 
 <div role="tabpanel" class="tab-pane" id="powershell">
 <div class="container-fluid" markdown="1">
-```php
+```posh
 {% include_relative assets/samples/bulk.whois/powershell/bulk_whois.ps1 %}
 ```
 </div>
@@ -84,7 +93,7 @@ Please, refer to
 
 <div role="tabpanel" class="tab-pane" id="ruby">
 <div class="container-fluid" markdown="1">
-```php
+```ruby
 {% include_relative assets/samples/bulk.whois/ruby/bulk_whois.rb %}
 ```
 </div>
