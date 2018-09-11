@@ -10,7 +10,7 @@ sub post_data {
     $req->content(encode_json({%$bs, %$dt}));
     return js->new->decode($ua->request($req)->content);
 }#{%endraw%}
-($res, $i) = (post_data('/bulkWhois', {domains => $dom}), 'requestId');
+my ($res, $i) = (post_data('/bulkWhois', {domains => $dom}), 'requestId');
 $res->{messageCode} && ($res->{messageCode} !=200) && die $res->{messageCode};
 my $arg = {$i => $res->{$i}, startIndex => @$dom + 1, maxRecords => 0};
 while (post_data('/getRecords', $arg)->{recordsLeft} > 0) { sleep(3); }
