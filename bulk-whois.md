@@ -33,6 +33,7 @@ Please, refer to
 
 <ul id="profileTabs" class="nav nav-tabs" role="tablist">
     <li class="active"><a href="#csharp" data-toggle="tab">C#</a></li>
+    <li><a href="#java" data-toggle="tab">Java</a></li>
     <li><a href="#jquery" data-toggle="tab">jQuery</a></li>
     <li><a href="#nodejs" data-toggle="tab">Node.js</a></li>
     <li><a href="#perl" data-toggle="tab">Perl</a></li>
@@ -48,6 +49,14 @@ Please, refer to
 <div class="container-fluid" markdown="1"> 
 ```c#
 {% include_relative assets/samples/bulk.whois/net/bulk_whois.cs %}
+```
+</div>
+</div>
+
+<div role="tabpanel" class="tab-pane" id="java">
+<div class="container-fluid" markdown="1"> 
+```java
+{% include_relative assets/samples/bulk.whois/java/bulk_whois.java %}
 ```
 </div>
 </div>
