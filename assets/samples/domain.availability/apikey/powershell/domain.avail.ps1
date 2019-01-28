@@ -15,6 +15,6 @@ $digest = [BitConverter]::ToString($hash).Replace('-','').ToLower()
 
 $uri = "https://www.whoisxmlapi.com/whoisserver/WhoisService?"`
      + "requestObject=$($req)&digest=$($digest)&domainName=$($domain)"`
-     + "&cmd=GET_DN_AVAILABILITY"
+     + "&cmd=GET_DN_AVAILABILITY" + "&getMode=DNS_AND_WHOIS"
 
 echo (Invoke-WebRequest -Uri $uri).Content
