@@ -1,22 +1,24 @@
-var http = require('https');
+const http = require('https');
 
-const username = 'your brand alert api username';
-const password = 'your brand alert api password';
-const term1 = "cinema";
-const exclude_term1 = 'movie';
-const exclude_term2 = 'online';
-const format = "JSON";
-
-var url = 'https://www.whoisxmlapi.com/brand-alert-api/search.php?' +
-    'term1=' + term1 +
-    '&username=' + username +
-    '&password=' + password +
-    '&output_format=' + format +
-    '&exclude_term1=' + exclude_term1 +
-    '&exclude_term2=' + exclude_term2;
-
-http.get(url, function(response) {
+const key = 'Your Brand Alert 2.0 API key';
+const terms = ["facebook"];
+const mode = "preview";
+const host = 'brand-alert-api.whoisxmlapi.com';
+const path = '/api/v2';
+const data = {
+    apiKey: key,
+    includeSearchTerms: terms,
+    mode: mode
+};
+const options = {
+    method: "POST",
+    hostname: host,
+    path: path
+};
+var req = http.request(options, function(response) {
     var str = '';
     response.on('data', function(chunk) { str += chunk; });
     response.on('end', function() { console.log(str); });
-}).end();
+});
+req.write(JSON.stringify(data));
+req.end();

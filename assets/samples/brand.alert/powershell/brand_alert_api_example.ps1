@@ -1,9 +1,6 @@
-$uri = "https://www.whoisxmlapi.com/brand-alert-api/search.php?"`
-+ "term1=cinema"`
-+ "&username=Your_brand_alert_api_username"`
-+ "&password=Your_brand_alert_api_password"`
-+ "&rows=10"`
-+ "&page=2"
+$url = "https://brand-alert-api.whoisxmlapi.com/api/v2"
 
-$j = Invoke-WebRequest -Uri $uri
-echo "JSON:`n---" $j.content "`n"
+$data = @{apiKey="Your Brand Alert 2.0 API key"`
+    ;mode="preview";includeSearchTerms=@('facebook')} | ConvertTo-Json
+$r = Invoke-WebRequest -Uri $url -Method POST -Body $data
+echo "JSON:`n---" $r.content "`n"

@@ -1,34 +1,33 @@
-﻿using System;
-using System.Xml;
+﻿{%raw%}
+using Hs = System.Collections.Hashtable;
+using Js = System.Web.Script.Serialization.JavaScriptSerializer;
 
-public class brandAlertApiQuery
+namespace brandAlertApiExample
 {
-    static void Main(string[] args)
+    internal class BrandAlertApiExample
     {
-        string username = "Your brand alert api username";
-        string password = "Your brand alert api password";
-        string term1 = "cinema";
-        string exclude_term1 = "online";
-        String format = "JSON";
-        String url = "https://www.whoisxmlapi.com/brand-alert-api/"
-            + "search.php?" + "username=" + username + "&password="
-            + password + "&output_format=" + format + "&term1="
-            + term1 + "&exclude_term1=" + exclude_term1;
-        dynamic result = new System.Net.WebClient().DownloadString(url);
-        try {
-            var xmlDoc = new XmlDocument();
-            xmlDoc.LoadXml(result);
-            WriteXml(xmlDoc);
+        public static void Main(string[] args)
+        {
+            string key = "Your Brand Alert 2.0 API key";
+            string[] terms = {"facebook"};
+            string mode = "preview";
+            string url = "https://brand-alert-api.whoisxmlapi.com/api/v2";
+
+            var data = new Hs {{"apiKey", key},{"mode", mode},
+                {"includeSearchTerms", terms}};
+
+            try {
+                var request = System.Net.WebRequest.Create(url);
+                request.Method = "POST";
+                var arg =System.Text.Encoding.UTF8.GetBytes(new Js().Serialize(data));
+                request.GetRequestStream().Write(arg, 0, arg.Length);
+                System.Console.WriteLine(new System.IO.StreamReader(
+                    request.GetResponse().GetResponseStream()).ReadToEnd());
+            }
+            catch (System.Exception e) {
+                System.Console.WriteLine("An error has occurred!");
+            }
         }
-        catch (Exception e) {
-            Console.WriteLine("An error has occurred!");
-        }
-    }
-    public static void WriteXml(XmlDocument doc) {
-        XmlTextWriter writer = new XmlTextWriter(Console.Out);
-        writer.Formatting = System.Xml.Formatting.Indented;
-        doc.WriteTo(writer);
-        writer.Flush();
-        Console.WriteLine();
     }
 }
+{%endraw%}

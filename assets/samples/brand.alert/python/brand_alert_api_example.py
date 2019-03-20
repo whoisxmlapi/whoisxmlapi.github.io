@@ -1,15 +1,17 @@
 try:
-    from urllib.request import urlopen
+    from urllib.request import urlopen, Request
 except ImportError:
-    from urllib2 import urlopen
+    from urllib2 import urlopen, Request
 
-terms = 'cinema';
-password = 'Your brand alert api password'
-username = 'Your brand alert api username'
-rows = '5'
+from json import dumps
 
-url = 'http://www.whoisxmlapi.com/brand-alert-api/search.php?'\
-    + 'term1=' + terms + '&username=' + username + '&password='\
-    + password + '&rows=' + rows
+terms = ['facebook'];
+key = 'Your Brand Alert 2.0 API key'
+mode = 'preview'
 
-print(urlopen(url).read().decode('utf8'))
+data = {'includeSearchTerms': terms, 'apiKey': key, 'mode': mode}
+url = 'https://brand-alert-api.whoisxmlapi.com/api/v2'
+
+req = Request(url)
+
+print(urlopen(req, dumps(data).encode('utf-8')).read().decode('utf8'))

@@ -1,9 +1,20 @@
 <?php
-    $terms = 'cinema';
-    $password = 'Your brand alert api password';
-    $username = 'Your brand alert api username';
-    $rows = '5';
-    $url = "https://www.whoisxmlapi.com/brand-alert-api/search.php?"
-        ."term1={$terms}&username={$username}&password={$password}&rows={$rows}";
+    $data = [
+        'apiKey' => 'Your Brand Alert 2.0 API key',
+        'mode' => 'preview',
+        'includeSearchTerms' => ['facebook'],
+    ];
 
-    print(file_get_contents($url));
+    $stream = stream_context_create(
+        [
+            'http' => [
+                'method' => 'POST',
+                'header' => 'Content-Type: application/json/r/n',
+                'content' => json_encode($data),
+            ]
+        ]
+    );
+
+    $url = "https://brand-alert-api.whoisxmlapi.com/api/v2";
+
+    print(file_get_contents($url, false, $stream));

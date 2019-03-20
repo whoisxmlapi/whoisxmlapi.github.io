@@ -1,22 +1,16 @@
-require 'open-uri'
+require 'uri'
 require 'json'
-require 'yaml'	
+require 'net/https'
 
-username = "Your brand alert api username"
-password = "Your brand alert api password"
-term1 = "cinema"
-exclude_term1 = 'movie'
-exclude_term2 = 'online'
+key = "Your Brand Alert 2.0 API key"
+mode = "preview"
+terms = ["facebook"]
 
-format = "JSON"
-url = 'https://www.whoisxmlapi.com/brand-alert-api/search.php?' +
-    'term1=' + term1 +
-    '&username=' + username +
-    '&password=' + password +
-    '&output_format=' + format +
-    '&exclude_term1=' + exclude_term1
-    '&exclude_term2=' + exclude_term2
+url = 'https://brand-alert-api.whoisxmlapi.com/api/v2'
+data = {apiKey: key, mode: mode, includeSearchTerms: terms}
+uri = URI.parse(url)
+http, http.use_ssl = Net::HTTP.new(uri.host, uri.port), true
+req, req.body = Net::HTTP::Post.new(uri.request_uri), data.to_json
+http.request(req).body
 
-buffer = open(url).read
-result = JSON.parse(buffer)
-puts "JSON:\n" + result.to_yaml + "\n"
+puts http.request(req).body

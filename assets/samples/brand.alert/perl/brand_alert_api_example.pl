@@ -1,24 +1,24 @@
 #!/usr/bin/perl
 
-use LWP::Simple;                # From CPAN and install LWP::Protocol::Https
-use JSON qw( decode_json );     # From CPAN
-use Data::Dumper;               # Perl core module
+use LWP::UserAgent;              # From CPAN
+use JSON;                        # From CPAN
+use HTTP::Request;
+use Encode qw( encode_utf8 );
+use Data::Dumper;                # Perl core module
 use strict;
 use warnings;
 
-my $base_url = "https://www.whoisxmlapi.com/brand-alert-api/search.php";
-my $term1 = "whois";
-my $exclude_term1 = "domain";
-my $exclude_term2 = "news";
-my $user_name = "Your brand alert api username";
-my $password = "Your brand alert api password";
+my $url = "https://brand-alert-api.whoisxmlapi.com/api/v2";
+my @terms = ["facebook"];
+my $key = "Your Brand Alert 2.0 API key";
+my $mode = 'preview';
+my $body = {'apiKey'=>$key, 'mode'=>$mode, 'includeSearchTerms'=>@terms};
+my $header = ['Content-Type' => 'application/json; charset=UTF-8'];
 
-print "JSON\n---\n".getDnsData("json");
+my $req = HTTP::Request->new(
+    'POST', $url, $header, encode_utf8(encode_json($body))
+);
 
-sub getDnsData {
-    my $format = $_[0];
-    my $url = "$base_url?username=$user_name&password=$password&term1="
-        . "$term1&exclude_term1=$exclude_term1&exclude_term2=" 
-        . "$exclude_term2&output_format=$format";
-    return get($url);
-}
+my $ua = LWP::UserAgent->new();
+
+print "Response ". $ua->request($req)->content();

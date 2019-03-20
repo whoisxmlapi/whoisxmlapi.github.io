@@ -1,8 +1,8 @@
 ---
 title: Brand Alert API Code Samples
-repository_url: //github.com/whois-api-llc/brand-alert
-releases_url: //github.com/whois-api-llc/brand-alert/releases
-header: Brand Alert API
+repository_url: //github.com/whois-api-llc/brand-alert2
+releases_url: //github.com/whois-api-llc/brand-alert2/releases
+header: Brand Alert API 2.0
 ---
 <div class="toc">
 	<a class="button" href="./bulk-whois"><div class="toc-item">Bulk Whois API</div></a>
@@ -19,7 +19,7 @@ header: Brand Alert API
 
 
 Here you'll find short examples of using
-[www.whoisxmlapi.com](https://www.whoisxmlapi.com/) Hosted Brand Alert Web API
+[brand-alert-api.whoisxmlapi.com](https://brand-alert-api.whoisxmlapi.com/) Hosted Brand Alert API
 implemented in multiple languages.
 
 You can view more sample code, incl. dealing with the API's response formats,
@@ -28,7 +28,7 @@ request parameters and more, in the
 
 
 Please, refer to
-[Brand Alert API User Guide](https://www.whoisxmlapi.com/brand-alert-api-guide.php) for
+[Brand Alert API Documentation](https://brand-alert-api.whoisxmlapi.com/docs) for
 request parameters and response schema descrption
 
 <ul id="profileTabs" class="nav nav-tabs" role="tablist">
@@ -56,7 +56,7 @@ request parameters and response schema descrption
 <div role="tabpanel" class="tab-pane" id="java">
 <div class="container-fluid" markdown="1"> 
 ```java
-{% include_relative assets/samples/brand.alert/java/BrandAlertApiQuery.java %}
+{% include_relative assets/samples/brand.alert/java/BrandAlertApiRequest.java %}
 ```
 </div>
 </div>
