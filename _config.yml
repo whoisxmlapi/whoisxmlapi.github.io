@@ -1,9 +1,9 @@
-gems:
+plugins:
     - jekyll-seo-tag
 author: whoisxmlapi
 description: >
   Code samples of making requests to whois api services of www.whoisxmlapi.com
-logo: https://static.whoisxmlapi.com/images/logo.png
+logo: https://whoisxmlapi.github.io/assets/img/logo.png
 repository: whois-api-llc/whoisxmlapi-samples
 show_downloads: true
 show_repo_url: true
