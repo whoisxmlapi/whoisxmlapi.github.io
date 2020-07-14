@@ -15,7 +15,7 @@ social:
         - https://www.linkedin.com/in/whois-api-6b257388
         - https://plus.google.com/110739836659192632708
 theme: jekyll-theme-cayman
-exclude: ["README.md"]
+exclude: ["README.md", "docker-compose.yml", "Gemfile", "Gemfile.lock"]
 sass:
     sass_dir: assets/_sass
 layouts_dir: assets/_layouts
