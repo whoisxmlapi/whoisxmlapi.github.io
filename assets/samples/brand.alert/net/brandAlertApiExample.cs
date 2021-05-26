@@ -11,7 +11,7 @@ namespace brandAlertApiExample
             string key = "Your Brand Alert 2.0 API key";
             string[] terms = {"facebook"};
             string mode = "preview";
-            string url = "https://brand-alert-api.whoisxmlapi.com/api/v2";
+            string url = "https://brand-alert.whoisxmlapi.com/api/v2";
 
             var data = new Hs {{"apiKey", key},{"mode", mode},
                 {"includeSearchTerms", terms}};

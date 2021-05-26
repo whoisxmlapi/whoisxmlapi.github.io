@@ -1,14 +1,15 @@
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script type="text/javascript">
-const url ="https://www.whoisxmlapi.com/BulkWhoisLookup/bulkServices", m=3000;
-let user="Whois api user", pass="...", x=$.extend,s=JSON.stringify,f="json",t;
+    const url = "https://www.whoisxmlapi.com/BulkWhoisLookup/bulkServices", m = 3000;
+    let apiKey = "Bulk Whois API Key", x = $.extend, s = JSON.stringify, f = "json", t;
 
-function api(uri, data, cb) {
-    let b ={password:pass, username:user, outputFormat:f}, p="post", a=$.ajax;
-    a({data:s(x(b,data)), type:p,url:url+uri,complete:d=>cb(d.responseJSON)});
-}
-api("/bulkWhois", {domains: ["threatintelligenceplatform.com"]}, r =>
-    t= setInterval((i,e,u) => api(u, x({},i,{startIndex:2,maxRecords:0}), r =>
-     !r.recordsLeft && !clearInterval(t) && api(u,i,r=>$(e).append(s(r)))), m,
-     {requestId:r.requestId,startIndex:1,maxRecords:1},"body","/getRecords"));
+    function api(uri, data, cb) {
+        let b = {apiKey: apiKey, outputFormat: f}, p = "post", a = $.ajax;
+        a({data: s(x(b, data)), type: p, url: url + uri, complete: d => cb(d.responseJSON)});
+    }
+
+    api("/bulkWhois", {domains: ["threatintelligenceplatform.com"]}, r =>
+        t = setInterval((i, e, u) => api(u, x({}, i, {startIndex: 2, maxRecords: 0}), r =>
+            !r.recordsLeft && !clearInterval(t) && api(u, i, r => $(e).append(s(r)))), m,
+            {requestId: r.requestId, startIndex: 1, maxRecords: 1}, "body", "/getRecords"));
 </script>

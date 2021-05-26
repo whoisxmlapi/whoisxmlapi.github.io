@@ -5,6 +5,7 @@ releases_url: //github.com/whois-api-llc/brand-alert2/releases
 header: Brand Alert API 2.0
 ---
 <div class="toc">
+    <a class="button" href="./brand-alert"><div class="toc-item">Brand Alert API</div></a>
 	<a class="button" href="./bulk-whois"><div class="toc-item">Bulk Whois API</div></a>
 	<a class="button" href="./dns-lookup"><div class="toc-item">DNS Lookup API</div></a>
     <a class="button" href="./domain-availability"><div class="toc-item">Domain Availability API</div></a>
@@ -12,14 +13,13 @@ header: Brand Alert API 2.0
     <a class="button" href="./registrant-alert"><div class="toc-item">Registrant Alert API</div></a>
     <a class="button" href="./reverse-whois"><div class="toc-item">Reverse Whois API</div></a>
     <a class="button" href="./"><div class="toc-item">Whois API</div></a>
-    <a class="button" href="./whois-api-2"><div class="toc-item">Whois API 2.0</div></a>
 </div>
 
 # Making a query to Brand Alert API web service
 
 
 Here you'll find short examples of using
-[brand-alert-api.whoisxmlapi.com](https://brand-alert-api.whoisxmlapi.com/) Hosted Brand Alert API
+[brand-alert.whoisxmlapi.com](https://brand-alert.whoisxmlapi.com/) Hosted Brand Alert API
 implemented in multiple languages.
 
 You can view more sample code, incl. dealing with the API's response formats,
@@ -28,8 +28,8 @@ request parameters and more, in the
 
 
 Please, refer to
-[Brand Alert API Documentation](https://brand-alert-api.whoisxmlapi.com/docs) for
-request parameters and response schema descrption
+[Brand Alert API Documentation](https://brand-alert.whoisxmlapi.com/api/documentation/making-requests) for
+request parameters and response schema description
 
 <ul id="profileTabs" class="nav nav-tabs" role="tablist">
     <li class="active"><a href="#csharp" data-toggle="tab">C#</a></li>

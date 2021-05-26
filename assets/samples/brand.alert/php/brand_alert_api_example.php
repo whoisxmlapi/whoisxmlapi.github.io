@@ -15,6 +15,6 @@
         ]
     );
 
-    $url = "https://brand-alert-api.whoisxmlapi.com/api/v2";
+    $url = "https://brand-alert.whoisxmlapi.com/api/v2";
 
     print(file_get_contents($url, false, $stream));

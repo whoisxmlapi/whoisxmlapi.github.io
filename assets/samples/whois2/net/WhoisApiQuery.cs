@@ -1,24 +1,32 @@
 using System;
-using System.Net;
-using System.IO;
+namespace WhoisApiSample
+{
+    internal class Program
+    {
+        public static void Main(string[] args)
+        {
+            string apiKey = "Your API Key";
 
-class Program {
-    public const string DOMAIN = "example.com";
-    public const string API_KEY = "your whois api key";
+            string domain = "whoisxmlapi.com";
+            string url = "https://www.whoisxmlapi.com/whoisserver/WhoisService?"
+                         + "domainName=" + domain
+                         + "&apiKey=" + apiKey
+                         + "&outputFormat=" + "JSON";
 
-    static void Main() {
-        string url = "http://www.whoisxmlapi.com/whoisserver/WhoisService?"
-                   + $"domainName={DOMAIN}&apiKey={API_KEY}";
-        string whoisData = string.Empty;
+            try
+            {
+                // Download JSON into a dynamic object
+                dynamic result = new System.Net.WebClient().DownloadString(url);
 
-        HttpWebRequest req = (HttpWebRequest)WebRequest.Create(url);
+                // Print a nice informative string
+                Console.WriteLine("JSON:\n");
+                Console.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("An unkown error has occurred!");
+            }
 
-        using (HttpWebResponse response = (HttpWebResponse)req.GetResponse())
-        using (Stream stream = response.GetResponseStream())
-        using (StreamReader reader = new StreamReader(stream)) {
-            whoisData = reader.ReadToEnd();
         }
-
-        Console.WriteLine(whoisData);
     }
 }

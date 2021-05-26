@@ -1,6 +1,6 @@
 public class BrandAlertApiRequest {
     public static void main(String[]args){
-        String API_URL="https://brand-alert-api.whoisxmlapi.com/api/v2";
+        String API_URL="https://brand-alert.whoisxmlapi.com/api/v2";
         String body="{\"apiKey\": \"Your Brand Alert 2.0 API key\","
 		+ "\"mode\": \"preview\","
 		+ "\"includeSearchTerms\": [\"facebook\"]}";

@@ -6,13 +6,13 @@ header: Bulk Whois API
 ---
 <div class="toc">
     <a class="button" href="./brand-alert"><div class="toc-item">Brand Alert API</div></a>
+	<a class="button" href="./bulk-whois"><div class="toc-item">Bulk Whois API</div></a>
 	<a class="button" href="./dns-lookup"><div class="toc-item">DNS Lookup API</div></a>
     <a class="button" href="./domain-availability"><div class="toc-item">Domain Availability API</div></a>
 	<a class="button" href="./email-verification"><div class="toc-item">Email Verification API</div></a>
     <a class="button" href="./registrant-alert"><div class="toc-item">Registrant Alert API</div></a>
     <a class="button" href="./reverse-whois"><div class="toc-item">Reverse Whois API</div></a>
-	<a class="button" href="./"><div class="toc-item">Whois API</div></a>
-	<a class="button" href="./whois-api-2"><div class="toc-item">Whois API 2.0</div></a>
+    <a class="button" href="./"><div class="toc-item">Whois API</div></a>
 </div>
 
 # Making a query to Bulk Whois API web service
@@ -28,7 +28,7 @@ requests order and more, in the
 
 
 Please, refer to
-[Bulk Whois API User Guide](https://www.whoisxmlapi.com/bulk-whois-api-userguide.php) for
+[Bulk Whois API User Guide](https://whois.whoisxmlapi.com/bulk-api/documentation/making-requests) for
  request and response formats, usage limits.
 
 <ul id="profileTabs" class="nav nav-tabs" role="tablist">

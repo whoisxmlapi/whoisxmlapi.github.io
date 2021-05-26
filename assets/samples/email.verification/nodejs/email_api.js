@@ -1,11 +1,10 @@
 var http = require('http');
 
 var email = 'support@whoisxmlapi.com';
-var apiKey = 'Your email verification api API_KEY';
+var api_key = 'your_api_key';
+var api_url = 'https://emailverification.whoisxmlapi.com/api/v1?';
 
-var url = 'https://emailverification.whoisxmlapi.com/api/v1?' +
-    'emailAddress=' + email +
-    '&apiKey=' + apikey;
+var url = api_url + 'apiKey=' + api_key + '&emailAddress=' + email;
 
 http.get(url, function(response) {
     var str = '';

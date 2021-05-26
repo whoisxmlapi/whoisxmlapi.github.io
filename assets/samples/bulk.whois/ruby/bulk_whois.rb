@@ -6,7 +6,7 @@ csv_filename, domains = 'whois_records.csv', %w[google.com whoisxmlapi.com]
 
 def api(path, data)
   url = 'https://www.whoisxmlapi.com/BulkWhoisLookup/bulkServices'
-  b ={ username:'Bulk whois api login', password:'pass', outputFormat:'json' }
+  b ={ apiKey:'Bulk Whois API Key', outputFormat:'json' }
   uri = URI.parse(url + path)
   http, http.use_ssl = Net::HTTP.new(uri.host, uri.port), true
   req, req.body = Net::HTTP::Post.new(uri.request_uri), b.merge(data).to_json

@@ -8,7 +8,7 @@ use Data::Dumper;                # Perl core module
 use strict;
 use warnings;
 
-my $url = "https://brand-alert-api.whoisxmlapi.com/api/v2";
+my $url = "https://brand-alert.whoisxmlapi.com/api/v2";
 my @terms = ["facebook"];
 my $key = "Your Brand Alert 2.0 API key";
 my $mode = 'preview';

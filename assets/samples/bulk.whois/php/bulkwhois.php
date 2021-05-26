@@ -1,16 +1,17 @@
 <?php
 
 $domains = ['google.com', 'youtube.com', 'facebook.com', 'whoisxmlapi.com'];
-list($username, $password) = array('Your Bulk Whois Api login', 'password');
+list($apiKey) = array('Your Bulk Whois API Key');
 $url = 'https://www.whoisxmlapi.com/BulkWhoisLookup/bulkServices';
 
-function api($path, array $data, $raw=false) {
-    global $url, $password, $username;
-    $header="Content-Type: application/json\r\nAccept: application/json\r\n";
-    $params = compact('username', 'password') + array('outputFormat'=>'json');
-    $opts = array('http' => array('method'  => 'POST', 'header' => $header));
+function api($path, array $data, $raw = false)
+{
+    global $url, $apiKey;
+    $header = "Content-Type: application/json\r\nAccept: application/json\r\n";
+    $params = compact('apiKey') + array('outputFormat' => 'json');
+    $opts = array('http' => array('method' => 'POST', 'header' => $header));
     $opts['http']['content'] = json_encode($params + $data);
-    $res = file_get_contents($url.$path, false, stream_context_create($opts));
+    $res = file_get_contents($url . $path, false, stream_context_create($opts));
     return $raw ? $res : json_decode($res);
 }
 

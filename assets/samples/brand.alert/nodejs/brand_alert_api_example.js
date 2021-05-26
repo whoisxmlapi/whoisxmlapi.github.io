@@ -3,7 +3,7 @@ const http = require('https');
 const key = 'Your Brand Alert 2.0 API key';
 const terms = ["facebook"];
 const mode = "preview";
-const host = 'brand-alert-api.whoisxmlapi.com';
+const host = 'brand-alert.whoisxmlapi.com';
 const path = '/api/v2';
 const data = {
     apiKey: key,
