@@ -1,0 +1,17 @@
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript">
+    var domain = "example.com";
+    var apiKey = "Your DNS Lookup API Key";
+    var type = "_all";
+
+    $(function () {
+        $.ajax({
+            url: "https://www.whoisxmlapi.com/whoisserver/DNSService",
+            dataType: "jsonp",
+            data: {apiKey: apiKey, domainName: domain, type: type},
+            success: function(data) {
+                $("body").append("<pre>"+ JSON.stringify(data,"",2)+"</pre>");
+            }
+        });
+    });
+</script>

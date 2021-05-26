@@ -1,9 +1,9 @@
 require 'open-uri'
 
 email = 'support@whoisxmlapi.com'
-api_key = 'Your email verification api API_KEY'
+api_key = 'your_api_key'
+api_url = 'https://emailverification.whoisxmlapi.com/api/v1?'
 
-url = 'https://emailverification.whoisxmlapi.com/api/v1?'\
-    + 'emailAddress=' + email + '&apiKey=' + api_key
+url = api_url + 'apiKey=' + api_key + '&emailAddress=' + email
 
 puts open(url).read

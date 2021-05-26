@@ -6,10 +6,10 @@ use Data::Dumper;
 use strict;
 use warnings;
 
-my $api_key = "Your email verification api API_KEY";
+my $email = "support@whoisxmlapi.com";
+my $api_key = "your_api_key";
+my $api_url = "https://emailverification.whoisxmlapi.com/api/v1";
 
-my $emailAddress = 'support@whoisxmlapi.com';
-my $base_url = 'https://emailverification.whoisxmlapi.com/api/v1';
+my $url = "$api_url?apiKey=$api_key&emailAddress=$email";
 
-my $url = "$base_url?emailAddress=$emailAddress&apiKey=$api_key";
 getprint($url);

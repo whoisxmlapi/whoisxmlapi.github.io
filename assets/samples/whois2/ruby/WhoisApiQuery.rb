@@ -1,9 +1,26 @@
 require 'open-uri'
+require 'json'
+require 'rexml/document'
+require 'rexml/xpath'
+require 'yaml'		# only needed to print the returned result in a very pretty way
 
-domain = 'example.com'
-api_key = 'your whois api key'
+########################
+# Fill in your details #
+########################
+apiKey = "Your API key"
 
-url = 'http://www.whoisxmlapi.com/whoisserver/WhoisService?'\
-    + 'domainName=' + domain + '&apiKey=' + api_key
+domainName = "whoisxmlapi.com"
 
-puts open(url).read
+url = 'https://www.whoisxmlapi.com/whoisserver/WhoisService?' +
+    'apiKey=' + apiKey +
+    '&domainName=' + domainName
+
+format = "JSON"
+# Open the resource
+buffer = open(url + '&outputFormat=' + format).read
+
+# Parse the JSON result
+result = JSON.parse(buffer)
+
+# Print out a nice informative string
+puts "JSON:\n" + result.to_yaml + "\n"

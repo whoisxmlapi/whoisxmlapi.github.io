@@ -1,12 +1,12 @@
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script type="text/javascript">
     var email = "support@whoisxmlapi.com";
-    var apiKey = "Your email verification api API_KEY";
+    var api_key = "your_api_key";
     $(function () {
         $.ajax({
-            url: "https://emailverification.whoisxmlapi.com/api/v1?",
-            dataType: "jsonp",
-            data: {emailAddress: email, apiKey: apiKey},
+            url: "https://emailverification.whoisxmlapi.com/api/v1",
+            dataType: "json",
+            data: {apiKey: api_key, emailAddress: email},
             success: function(data) {
                 $("body").append("<pre>"+ JSON.stringify(data,"",2)+"</pre>");
             }

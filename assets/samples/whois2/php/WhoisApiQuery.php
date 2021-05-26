@@ -1,9 +1,10 @@
 <?php
 
-$domain = 'example.com';
-$apiKey = 'your whois api key';
+$domainName = 'whoisxmlapi.com';
+$apiKey = 'Your API key';
 
-$url = 'http://www.whoisxmlapi.com/whoisserver/WhoisService?'
-     . "domainName={$domain}&apiKey={$apiKey}";
+$url = "https://www.whoisxmlapi.com/whoisserver/WhoisService"
+    . "?domainName={$domainName}&apiKey={$apiKey}&outputFormat=JSON";
 
 print(file_get_contents($url));
+

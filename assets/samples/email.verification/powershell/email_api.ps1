@@ -1,10 +1,8 @@
-$apiKey = "Your email verification api API_KEY"
+$email = "support@whoisxmlapi.com"
+$api_key = "your_api_key"
+$api_url = "https://emailverification.whoisxmlapi.com/api/v1?"
 
-$emailAddress = "support@whoisxmlapi.com"
-
-$uri = "https://emailverification.whoisxmlapi.com/api/v1?"`
-    + "emailAddress=$emailAddress"`
-    + "&apiKey=$apiKey"
+$uri = "$api_url" + "apiKey=$api_key" + "&emailAddress=$email"
 
 $j = Invoke-WebRequest -Uri $uri
 echo "JSON:`n---" $j.content "`n"

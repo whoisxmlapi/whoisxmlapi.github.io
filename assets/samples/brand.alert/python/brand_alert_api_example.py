@@ -10,7 +10,7 @@ key = 'Your Brand Alert 2.0 API key'
 mode = 'preview'
 
 data = {'includeSearchTerms': terms, 'apiKey': key, 'mode': mode}
-url = 'https://brand-alert-api.whoisxmlapi.com/api/v2'
+url = 'https://brand-alert.whoisxmlapi.com/api/v2'
 
 req = Request(url)
 
