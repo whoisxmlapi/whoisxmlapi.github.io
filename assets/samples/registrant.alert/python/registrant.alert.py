@@ -45,7 +45,7 @@ headers = {
     'Accept': 'application/json'
 }
 
-conn = http.HTTPSConnection('registrant-alert-api.whoisxmlapi.com')
+conn = http.HTTPSConnection('registrant-alert.whoisxmlapi.com')
 
 conn.request('POST', '/api/v2', json.dumps(payload_basic), headers)
 text = conn.getresponse().read().decode('utf8')

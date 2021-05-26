@@ -17,7 +17,7 @@ namespace RegistrantAlertApi
         private const string ApiKey = "Your registrant alert api key";
 
         private const string Url =
-            "https://registrant-alert-api.whoisxmlapi.com/api/v2";
+            "https://registrant-alert.whoisxmlapi.com/api/v2";
 
         private const string SearchParamsAdvanced =
             @"{

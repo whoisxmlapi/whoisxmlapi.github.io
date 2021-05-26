@@ -34,7 +34,7 @@ function registrant_alert_api(array $data=array())
 {
     $header ="Content-Type: application/json\r\nAccept: application/json\r\n";
 
-    $url = 'https://registrant-alert-api.whoisxmlapi.com/api/v2';
+    $url = 'https://registrant-alert.whoisxmlapi.com/api/v2';
 
     $options = array(
         'http' => array(

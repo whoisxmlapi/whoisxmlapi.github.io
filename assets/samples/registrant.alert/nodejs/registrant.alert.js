@@ -39,7 +39,7 @@ function api_call(data, callback)
     var body = '';
 
     var opts = {
-        hostname: 'registrant-alert-api.whoisxmlapi.com',
+        hostname: 'registrant-alert.whoisxmlapi.com',
         path: '/api/v2',
         method:'POST',
         headers: {

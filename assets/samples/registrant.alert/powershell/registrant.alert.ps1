@@ -35,7 +35,7 @@ $paramsBasic = @{
 # POST request        #
 #######################
 
-$uri = 'https://registrant-alert-api.whoisxmlapi.com/api/v2'
+$uri = 'https://registrant-alert.whoisxmlapi.com/api/v2'
 
 $response = Invoke-WebRequest -Uri $uri -Method POST -Body $paramsBasic `
             -ContentType 'application/json'

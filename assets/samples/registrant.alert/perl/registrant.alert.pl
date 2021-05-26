@@ -12,7 +12,7 @@ use warnings;
 ########################
 my $api_key = 'Your registrant alert api key';
 
-my $url = 'https://registrant-alert-api.whoisxmlapi.com/api/v2';
+my $url = 'https://registrant-alert.whoisxmlapi.com/api/v2';
 
 my $search_params_advanced = '{
     "advancedSearchTerms": [
